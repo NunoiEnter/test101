@@ -1,6 +1,4 @@
-/* RMUTP Theme CSS - Primary: RGB(160, 13, 44), Secondary: White */
 
-/* Reset default browser styles */
 * {
     margin: 0;
     padding: 0;
@@ -27,14 +25,8 @@ body {
     flex-wrap: wrap;
 }
 
-
-#hgroup {
-    flex: 1;
-}
-
 #site-title {
-    font-size: 24px;
-    margin-bottom: 5px;
+    font-size: 12px;
 }
 
 #site-title a, #site-description {
@@ -47,13 +39,14 @@ body {
     font-weight: normal;
 }
 
-/* Navigation */
+/* Navigation (Keep as-is) */
 nav {
     background-color: white;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    margin-bottom: 20px;
-    padding: 10px 0;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    margin: 20px 0;
+    padding: 15px 0;
     text-align: center;
+    border-radius: 10px;
 }
 
 nav a {
@@ -63,12 +56,15 @@ nav a {
     margin: 0 5px;
     display: inline-block;
     font-weight: bold;
-    border-radius: 3px;
-    transition: background-color 0.3s;
+    border-radius: 25px;
+    transition: all 0.3s ease;
+    background-color: rgba(160, 13, 44, 0.05);
 }
 
 nav a:hover {
     background-color: rgba(160, 13, 44, 0.1);
+    transform: translateY(-2px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 /* Main content */
@@ -100,7 +96,6 @@ img {
     margin: 20px auto;
 }
 
-/* Footer */
 footer {
     background-color: rgb(160, 13, 44);
     color: white;
